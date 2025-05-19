@@ -14,10 +14,10 @@ import java.util.List;
 @CrossOrigin("*")
 public class ClientController {
     @Autowired
-    private final ClientServiceImpl clientService;
+    private final ClientService clientService;
 
     @Autowired
-    public ClientController(ClientServiceImpl clientService) {
+    public ClientController(ClientService clientService) {
         this.clientService = clientService;
     }
 

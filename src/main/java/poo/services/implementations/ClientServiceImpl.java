@@ -1,6 +1,7 @@
 package poo.services.implementations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import poo.dtos.ClientDTO;
 import poo.entities.Client;
 import poo.exceptions.ResourceNotFoundException;
@@ -9,7 +10,7 @@ import poo.services.interfaces.ClientService;
 import poo.entities.Credit;
 import java.util.List;
 import java.util.stream.Collectors;
-
+@Service
 public class ClientServiceImpl implements ClientService {
     private final ClientRepository clientRepository;
 

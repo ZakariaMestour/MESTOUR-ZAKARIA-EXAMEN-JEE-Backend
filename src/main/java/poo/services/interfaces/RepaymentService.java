@@ -15,7 +15,6 @@ public interface RepaymentService {
     RepaymentDTO updateRepayment(Long id, RepaymentDTO repaymentDTO);
     void deleteRepayment(Long id);
 
-    // Additional business logic methods
     Double calculateTotalRepaidAmount(Long creditId);
     Double calculateRemainingAmount(Long creditId);
 }

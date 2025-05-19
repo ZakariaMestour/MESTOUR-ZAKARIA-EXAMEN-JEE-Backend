@@ -11,6 +11,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
