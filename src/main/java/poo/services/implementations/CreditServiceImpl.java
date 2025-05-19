@@ -267,7 +267,7 @@ public class CreditServiceImpl implements CreditService {
 
     private PersonalCredit convertToPersonalCreditEntity(PersonalCreditDTO dto) {
         PersonalCredit personalCredit = new PersonalCredit();
-        // Set base credit properties
+
         setBaseCreditProperties(personalCredit, dto);
         // Set specific properties
         personalCredit.setReason(dto.getReason());
